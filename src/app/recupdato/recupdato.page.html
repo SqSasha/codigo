@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        DuocUc
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-title class="ion-padding-top ion-text-center">
+      <ion-label>
+        <ion-label>
+          <h1 class="ion-text-center">Recuperar Clave:</h1>
+        </ion-label>
+      </ion-label>
+    </ion-title>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="recuperar.nombreUsuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Palabra Secreta</ion-label>
+        <ion-input type="text" [(ngModel)]="recuperar.palabraSecreta"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" >Nueva Clave</ion-label>
+        <ion-input type="password" [(ngModel)]="recuperar.pass"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" >Confirmar Clave</ion-label>
+        <ion-input type="password" [(ngModel)]="recuperar.confirmPass"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col size="12" >
+          <ion-button  shape="block" (click)="ingresar1()">Ingresar</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

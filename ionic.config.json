@@ -1,0 +1,10 @@
+{
+  "name": "codigo",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

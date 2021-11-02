@@ -35,21 +35,21 @@ export class LoginPage implements OnInit {
 
     const mensajeError = usuario.validarUsuario();
 
-    //if (mensajeError) {
-      //this.mostrarMensaje(mensajeError);
-     //return false;
-    //}
+    if (mensajeError) {
+      this.mostrarMensaje(mensajeError);
+      return false;
+    }
 
     return true;
   }
 
-  //async mostrarMensaje(mensaje: string, duracion?: number) {
-    //const toast = await this.toastController.create({
-      //  message: mensaje,
-        //duration: duracion? duracion: 2000
-      //});
-    //toast.present();
-  //}
+  async mostrarMensaje(mensaje: string, duracion?: number) {
+    const toast = await this.toastController.create({
+        message: mensaje,
+        duration: duracion? duracion: 2000
+      });
+    toast.present();
+  }
   recupdato(){
     this.router.navigate(['/recupdato']);
   }
@@ -57,9 +57,4 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/home']);
   }
 }
-//interfaz grafica
-//-- animacion
 
-//-emular en telefono
-
-//--state home

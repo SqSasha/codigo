@@ -1,0 +1,19 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+      Duocuc
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment value="pizza" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="recupdato">
+        <ion-label>Recuperar Clave</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+<ion-content class="content">
+  <ion-router-outlet></ion-router-outlet>
+
+</ion-content>

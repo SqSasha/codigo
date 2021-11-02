@@ -1,26 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
-import { Recuperar } from '../models/recuperar';
-
+import { Recuperar } from '../../models/recuperar';
 @Component({
   selector: 'app-recupdato',
-  templateUrl: './recupdato.page.html',
-  styleUrls: ['./recupdato.page.scss'],
+  templateUrl: './recupdato.component.html',
+  styleUrls: ['./recupdato.component.scss'],
 })
-export class RecupdatoPage implements OnInit {
+export class RecupdatoComponent implements OnInit {
   public recuperar: Recuperar;
   constructor(private router: Router,
-     private toastController: ToastController) {
+    private toastController: ToastController) {
        this.recuperar = new Recuperar();
        this.recuperar.nombreUsuario= '';
        this.recuperar.palabraSecreta = '';
        this.recuperar.pass = '';
        this.recuperar.confirmPass = '';
-      }
+     }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   public ingresar1(): void{
     if(!this.validarUsuario(this.recuperar)){
       return;

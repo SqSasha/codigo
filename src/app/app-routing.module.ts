@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'recupdato',
-    loadChildren: () => import('./recupdato/recupdato.module').then( m => m.RecupdatoPageModule)
+    loadChildren: () => import('./recuperardatos/recuperardatos.module').then( m => m.RecuperardatosPageModule)
   },
   {
     path: 'home',
